@@ -7,6 +7,7 @@ end
 
 get '/random1' do
   content_type :json
+  i_dont_exist if rand(10) > 5
   {
     number: rand(10)
   }.to_json

@@ -13,5 +13,8 @@ $.ajax("/random1").then(
 ).then(
     function(value){
 	alert(random1 + " + " + random2 + " = " + value['sum']);
+    },
+    function(error){
+	alert(error.statusText);
     }
 );
