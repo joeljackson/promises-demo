@@ -7,7 +7,7 @@ end
 
 get '/random1' do
   content_type :json
-  i_dont_exist if rand(10) > 5
+  halt 404 if rand(10) > 9
   {
     number: rand(10)
   }.to_json
@@ -15,6 +15,7 @@ end
 
 get '/random2' do
   content_type :json
+  halt 404 if rand(10) > 9
   {
     number: rand(10)
   }.to_json
@@ -22,6 +23,7 @@ end
 
 get '/sum' do
   content_type :json
+  halt 404 if rand(10) > 9
   {
     sum: params[:one].to_i + params[:two].to_i
   }.to_json
