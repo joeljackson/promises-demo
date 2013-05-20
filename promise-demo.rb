@@ -1,10 +1,8 @@
 require 'rubygems'
 require 'bundler'
 require 'awesome_print'
-require 'debugger'
-
+require 'byebug'
 require 'em-http-request'
-debugger
 require 'em-http-promise'
 require 'json'
 

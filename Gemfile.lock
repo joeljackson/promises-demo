@@ -2,14 +2,16 @@ GEM
   remote: http://www.rubygems.org/
   specs:
     addressable (2.3.4)
+    awesome_print (1.1.0)
+    byebug (1.1.1)
+      columnize (~> 0.3.6)
+      debugger-linecache (~> 1.2.0)
     columnize (0.3.6)
     cookiejar (0.3.0)
-    debugger (1.5.0)
-      columnize (>= 0.3.1)
-      debugger-linecache (~> 1.2.0)
-      debugger-ruby_core_source (~> 1.2.0)
     debugger-linecache (1.2.0)
-    debugger-ruby_core_source (1.2.0)
+    em-http-promise (0.0.1)
+      em-http-request
+      em-promise (~> 1.1.1)
     em-http-request (1.0.3)
       addressable (>= 2.2.3)
       cookiejar
@@ -35,7 +37,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  debugger
-  em-http-request
-  em-promise
+  awesome_print
+  byebug
+  em-http-promise
   sinatra
