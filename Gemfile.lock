@@ -1,3 +1,9 @@
+PATH
+  remote: /Users/joelj/Projects/em-promise
+  specs:
+    em-promise (1.1.1)
+      eventmachine (>= 1.0.0.beta.4)
+
 GEM
   remote: http://www.rubygems.org/
   specs:
@@ -18,8 +24,6 @@ GEM
       em-socksify
       eventmachine (>= 1.0.0.beta.4)
       http_parser.rb (>= 0.5.3)
-    em-promise (1.1.1)
-      eventmachine (>= 1.0.0.beta.4)
     em-socksify (0.2.1)
       eventmachine (>= 1.0.0.beta.4)
     eventmachine (1.0.3)
@@ -40,4 +44,5 @@ DEPENDENCIES
   awesome_print
   byebug
   em-http-promise
+  em-promise!
   sinatra
